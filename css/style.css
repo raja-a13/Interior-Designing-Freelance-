@@ -3187,6 +3187,8 @@ input[type="button"].btn-block {
   .nav-link.disabled {
     color: #6c757d; }
 
+
+
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
   .nav-tabs .nav-item {
@@ -7330,6 +7332,100 @@ h1, h2, h3, h4, h5,
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #fff; }
+  
+
+  .ftco-navbar-light .navbar-nav .has-children {
+    position: relative; }
+    .ftco-navbar-light .navbar-nav .has-children > a {
+      position: relative;
+      padding-right: 20px; }
+      .ftco-navbar-light .navbar-nav .has-children > a:before {
+        position: absolute;
+        content: "\e313";
+        font-size: 16px;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-family: 'icomoon'; }
+    .ftco-navbar-light .navbar-nav .has-children .dropdown {
+      visibility: hidden;
+      opacity: 0;
+      top: 100%;
+      position: absolute;
+      text-align: left;
+      -webkit-box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25);
+      border-left: 1px solid #edf0f5;
+      border-right: 1px solid #edf0f5;
+      border-bottom: 1px solid #edf0f5;
+      padding: 0px 0;
+      margin-top: 20px;
+      margin-left: 0px;
+      background: #fff;
+      -webkit-transition: 0.2s 0s;
+      -o-transition: 0.2s 0s;
+      transition: 0.2s 0s; }
+      .ftco-navbar-light .navbar-nav .has-children .dropdown.arrow-top {
+        position: absolute; }
+        .ftco-navbar-light .navbar-nav .has-children .dropdown.arrow-top:before {
+          bottom: 100%;
+          left: 20%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none; }
+        .ftco-navbar-light .navbar-nav .has-children .dropdown.arrow-top:before {
+          border-color: rgba(136, 183, 213, 0);
+          border-bottom-color: #fff;
+          border-width: 10px;
+          margin-left: -10px; }
+      .ftco-navbar-light .navbar-nav .has-children .dropdown a {
+        font-size: 14px;
+        text-transform: none;
+        letter-spacing: normal;
+        -webkit-transition: 0s all;
+        -o-transition: 0s all;
+        transition: 0s all;
+        color: #343a40; }
+      .ftco-navbar-light .navbar-nav .has-children .dropdown .active > a {
+        color: #fff !important; }
+      .ftco-navbar-light .navbar-nav .has-children .dropdown > li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 200px; }
+        .ftco-navbar-light .navbar-nav .has-children .dropdown > li > a {
+          padding: 9px 20px;
+          display: block; }
+          .ftco-navbar-light .navbar-nav .has-children .dropdown > li > a:hover {
+            background: #f4f5f9;
+            color: #25262a; }
+        .ftco-navbar-light .navbar-nav .has-children .dropdown > li.has-children > a:before {
+          content: "\e315";
+          right: 20px; }
+        .ftco-navbar-light .navbar-nav .has-children .dropdown > li.has-children > .dropdown, .ftco-navbar-light .navbar-nav .has-children .dropdown > li.has-children > ul {
+          left: 100%;
+          top: 0; }
+        .ftco-navbar-light .navbar-nav .has-children .dropdown > li.has-children:hover > a, .ftco-navbar-light .navbar-nav .has-children .dropdown > li.has-children:active > a, .ftco-navbar-light .navbar-nav .has-children .dropdown > li.has-children:focus > a {
+          background: #f4f5f9;
+          color: #25262a; }
+    .ftco-navbar-light .navbar-nav .has-children:hover > a, .ftco-navbar-light .navbar-nav .has-children:focus > a, .ftco-navbar-light .navbar-nav .has-children:active > a {
+      color: #fff; }
+    .ftco-navbar-light .navbar-nav .has-children:hover, .ftco-navbar-light .navbar-nav .has-children:focus, .ftco-navbar-light .navbar-nav .has-children:active {
+      cursor: pointer; }
+      .ftco-navbar-light .navbar-nav .has-children:hover > .dropdown, .ftco-navbar-light .navbar-nav .has-children:focus > .dropdown, .ftco-navbar-light .navbar-nav .has-children:active > .dropdown {
+        -webkit-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;
+        margin-top: 0px;
+        visibility: visible;
+        opacity: 1; }
+  
+  
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #fff;
