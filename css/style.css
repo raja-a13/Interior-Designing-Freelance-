@@ -7339,7 +7339,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav .has-children > a {
       position: relative;
       padding-right: 20px; }
-      .ftco-navbar-light .navbar-nav .has-children > a:before {
+      .ftco-navbar-light .navbar-nav .has-children > span:before {
         position: absolute;
         content: "\e313";
         font-size: 16px;
